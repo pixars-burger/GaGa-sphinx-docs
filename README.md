@@ -1,19 +1,28 @@
-# 项目名称
-
-## 介绍
-这里是项目的简要介绍和说明。
-
-## 目录
-- [克隆仓库](#克隆仓库)
-- [生成 SSH 密钥](#生成-ssh-密钥)
-- [编译代码](#编译代码)
-- [复制文件](#复制文件)
-- [上传代码](#上传代码)
-- [拉取最新代码](#拉取最新代码)
-- [清理编译文件](#清理编译文件)
-- [其他常用命令](#其他常用命令)
-
-## 克隆仓库
-使用以下命令克隆仓库到本地：
+# 嘎嘎的斯芬克斯文档
+## 常用命令
+### 克隆仓库命令
 ```sh
-git clone git@github.com:your-username/your-repo.git
+git@github.com:pixars-burger/GaGa-sphinx-docs.git
+```
+### 生成 SSH 密钥
+```sh
+ssh-keygen -t ed25519 -C "your_email@example.com"
+```
+### 编译 Sphinx 文档
+```sh
+make.bat html
+```
+### 编译完成后复制更新后的文档到docs目录
+```sh
+xcopy build\html docs\ /E /I /Y
+```
+### 上传代码
+```sh
+git add .
+git commit -m "描述你的更改内容"
+git push origin branch_name
+```
+### 拉取最新代码
+```sh
+git pull origin branch_name
+```
