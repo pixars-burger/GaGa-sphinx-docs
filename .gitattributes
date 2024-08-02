@@ -1,0 +1,20 @@
+# Set default behavior to automatically normalize line endings.
+* text=auto
+
+# Explicitly set text files to be normalized.
+*.c text
+*.cpp text
+*.h text
+*.py text
+
+# Explicitly set binary files to be treated as binary.
+*.jpg binary
+*.png binary
+*.gif binary
+*.svg binary
+
+# Specific files to treat as text
+*.css text
+*.js text
+*.html text
+*.json text
