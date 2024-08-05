@@ -8,7 +8,7 @@
 import sphinx_rtd_theme
 # import pydata_sphinx_theme
 # 导入 recommonmark
-from recommonmark.parser import CommonMarkParser
+# from recommonmark.parser import CommonMarkParser
 from recommonmark.transform import AutoStructify
 
 
@@ -22,6 +22,7 @@ release = '0.1'
 
 extensions = [
     'recommonmark',
+    'sphinx_markdown_tables',
 ]
 
 source_suffix = {
