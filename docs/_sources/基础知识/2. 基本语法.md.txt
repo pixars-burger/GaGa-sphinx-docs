@@ -1,0 +1,40 @@
+### 基本语法
+#####  基本语法
+C++的**基本语法**构成了编写程序的基础。以下是一些关键概念和示例
+
+头文件引入
+```cpp
+#include <iostream>  // 引入标准输入输出流库
+```
+主函数
+```cpp
+int main() {
+    std::cout << "Hello, World!" << std::endl;  // 输出 "Hello, World!"
+    return 0;  // 返回值，0 表示程序成功结束
+}
+```
+注释
+```cpp
+// 单行注释
+/*
+ * 多行注释
+ */
+```
+变量声明
+```cpp
+int a = 5;  // 整数变量
+double b = 3.14;  // 双精度浮点变量
+char c = 'A';  // 字符变量
+```
+基本输入输出
+```cpp
+#include <iostream>
+
+int main() {
+    int num;
+    std::cout << "Enter a number: ";  // 提示用户输入
+    std::cin >> num;  // 获取用户输入
+    std::cout << "You entered: " << num << std::endl;  // 输出用户输入
+    return 0;
+}
+```
